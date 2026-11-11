@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tiffany Ann D. Sacriz's personal developer portfolio.">
+  <title>Tiffany Ann D. Sacriz | Developer Portfolio</title>
+  <style>
+    :root { --ink:#24312c; --muted:#61716a; --cream:#f7f4ec; --sage:#dce8dc; --green:#315b46; --coral:#c9785c; --white:#fffefa; --line:#d9ded5; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--cream); color:var(--ink); font-family:Arial, Helvetica, sans-serif; line-height:1.65; }
+    a { color:var(--green); }
+    .room { min-height:100vh; overflow:hidden; background:radial-gradient(ellipse at 84% 12%,#f0dfc9 0 8%,transparent 8.2%),linear-gradient(90deg,#e9e1d3 0 2%,transparent 2% 98%,#e9e1d3 98%),var(--cream); }
+    .wrap { width:min(1080px,calc(100% - 40px)); margin:auto; }
+    header { padding:36px 0 30px; border-bottom:1px solid var(--line); }
+    .brand { display:flex; align-items:center; gap:12px; font-weight:700; letter-spacing:.04em; }
+    .brand-mark { display:grid; place-items:center; width:38px; height:38px; border-radius:50%; color:#fff; background:var(--green); }
+    .hero { display:grid; grid-template-columns:1.2fr .8fr; gap:40px; align-items:center; padding:55px 0 64px; }
+    .eyebrow { color:var(--coral); font-weight:700; letter-spacing:.14em; text-transform:uppercase; font-size:.78rem; }
+    h1 { max-width:660px; margin:.2em 0 .12em; font-family:Georgia,serif; font-size:clamp(2.8rem,7vw,5.5rem); line-height:1.03; letter-spacing:-.045em; }
+    .tagline { margin:0 0 18px; color:var(--green); font-family:Georgia,serif; font-size:1.5rem; font-style:italic; }
+    .hero-copy { max-width:560px; color:var(--muted); }
+    .room-card { position:relative; padding:24px; border:1px solid #d7c8b3; border-radius:180px 180px 18px 18px; background:#e8d8c2; box-shadow:0 20px 50px #584b361c; }
+    .room-window { height:265px; border:9px solid #fff9ec; border-radius:140px 140px 8px 8px; background:linear-gradient(#c7d9d5 0 55%,#a6bca9 55% 58%,#d7c4a8 58%); position:relative; overflow:hidden; }
+    .sun { position:absolute; width:48px;height:48px;right:22%;top:20%;border-radius:50%;background:#f3d391; }
+    .plant { position:absolute; bottom:0; left:16%; width:90px;height:140px; border-bottom:18px solid #a25f42; }
+    .plant:before { content:'✦'; position:absolute; bottom:12px; left:10px; color:#54785e; font-size:105px; text-shadow:24px -22px #6f8d68,-20px -36px #678760; }
+    .caption { margin:12px 0 0; text-align:center; color:#645848; font-size:.85rem; }
+    nav { display:flex; flex-wrap:wrap; gap:8px; padding:16px 0; border-top:1px solid var(--line); }
+    nav a { text-decoration:none; font-weight:700; padding:8px 13px; border-radius:30px; }
+    nav a:hover, nav a:focus-visible { background:var(--sage); outline:none; }
+    main { padding:20px 0 64px; }
+    section { scroll-margin-top:20px; margin:20px 0; padding:30px; border:1px solid var(--line); border-radius:18px; background:var(--white); box-shadow:0 8px 24px #26342d0a; }
+    h2 { margin:0 0 15px; font:700 clamp(1.6rem,4vw,2.2rem)/1.2 Georgia,serif; }
+    .about-layout { display:grid; grid-template-columns:170px 1fr; gap:24px; align-items:center; }
+    .avatar { display:grid; place-items:center; width:150px; aspect-ratio:1; border-radius:50%; background:var(--sage); border:8px solid #f1eee5; color:var(--green); font:700 2rem Georgia,serif; }
+    .skills-list { display:flex; flex-wrap:wrap; gap:10px; list-style:none; padding:0; }
+    .skills-list li { background:var(--sage); color:#294a38; border-radius:30px; padding:8px 14px; font-weight:700; }
+    .table-scroll { overflow-x:auto; }
+    table { width:100%; border-collapse:collapse; min-width:450px; }
+    th,td { padding:13px 15px; border-bottom:1px solid var(--line); text-align:left; }
+    th { background:#edf1e9; color:var(--green); }
+    @media(max-width:700px) { .wrap{width:min(100% - 26px,560px)} header{padding-top:24px}.hero{grid-template-columns:1fr;gap:24px;padding:38px 0}.room-card{max-width:360px;margin:auto}.room-window{height:230px}.about-layout{grid-template-columns:1fr}.avatar{width:120px}section{padding:22px}nav{gap:2px}nav a{padding:8px 10px;font-size:.92rem} }
+  </style>
+</head>
+<body>
+  <div class="room">
+    <header class="wrap" id="home">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">T</span><span>Tiffany's Portfolio</span></div>
+      <div class="hero">
+        <div>
+          <p class="eyebrow">A little room for big ideas</p>
+          <h1>Tiffany Ann D. Sacriz</h1>
+          <p class="tagline">“You're gonna go far.”</p>
+          <p class="hero-copy">Aspiring developer, thoughtful problem-solver, and future technology professional building a welcoming space for ideas to grow.</p>
+        </div>
+        <div class="room-card" role="img" aria-label="Illustration of a calm, sunlit room with a window and leafy plant">
+          <div class="room-window"><span class="sun"></span><span class="plant"></span></div>
+          <p class="caption">A cozy corner for creativity</p>
+        </div>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#projects">Projects</a><a href="#goals">Career Goals</a><a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main class="wrap">
+      <section id="about">
+        <h2>About Me</h2>
+        <div class="about-layout">
+          <div class="avatar" role="img" aria-label="Decorative initials T S in a sage green circle">T&nbsp;S</div>
+          <div>
+            <p>I'm an adventurous girl who loves to develop, critique, and analyze things with my wholesome ideas. I enjoy interacting with people, making new connections, and meeting friends throughout my journey. As a future QA Analyst and AI Engineer, I hope to inspire others to use AI wisely without depending on it.</p>
+          </div>
+        </div>
+      </section>
+      <section id="skills">
+        <h2>Skills I’m Growing</h2>
+        <ul class="skills-list"><li>Writing</li><li>Web Development</li><li>Public Speaking</li><li>Goal Setting</li><li>Leadership</li><li>Creative Problem-Solving</li></ul>
+      </section>
+      <section id="education">
+        <h2>Education</h2>
+        <div class="table-scroll"><table>
+          <thead><tr><th scope="col">School</th><th scope="col">Program</th><th scope="col">Year Level</th></tr></thead>
+          <tbody><tr><td>National University – Fairview</td><td>BS Information Technology</td><td>2nd Year</td></tr></tbody>
+        </table></div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
