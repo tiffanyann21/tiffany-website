@@ -34,12 +34,16 @@
     section { scroll-margin-top:20px; margin:20px 0; padding:30px; border:1px solid var(--line); border-radius:18px; background:var(--white); box-shadow:0 8px 24px #26342d0a; }
     h2 { margin:0 0 15px; font:700 clamp(1.6rem,4vw,2.2rem)/1.2 Georgia,serif; }
     .about-layout { display:grid; grid-template-columns:170px 1fr; gap:24px; align-items:center; }
-    .avatar { display:grid; place-items:center; width:150px; aspect-ratio:1; border-radius:50%; background:var(--sage); border:8px solid #f1eee5; color:var(--green); font:700 2rem Georgia,serif; }
+    .avatar { display:block; width:150px; height:175px; object-fit:cover; object-position:center 34%; border-radius:78px 78px 18px 18px; border:7px solid #f1eee5; box-shadow:0 8px 24px #26342d12; }
     .skills-list { display:flex; flex-wrap:wrap; gap:10px; list-style:none; padding:0; }
     .project-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
     .project-card { padding:20px; border-radius:14px; background:#f2f3ec; border:1px solid var(--line); }
     .project-card h3 { margin:0 0 8px; font:700 1.3rem Georgia,serif; }
     .project-card .eyebrow { margin:0 0 8px; }
+    .photo-gallery { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin-top:18px; }
+    .photo-gallery figure { margin:0; }
+    .photo-gallery img { width:100%; height:210px; object-fit:cover; border-radius:10px; }
+    .photo-gallery figcaption { padding:6px 2px; color:var(--muted); font-size:.85rem; }
     .goals-list { padding-left:1.4rem; }
     .goals-list li { padding:5px 0 5px 6px; }
     .contact-form { display:grid; gap:9px; max-width:600px; }
@@ -54,7 +58,7 @@
     table { width:100%; border-collapse:collapse; min-width:450px; }
     th,td { padding:13px 15px; border-bottom:1px solid var(--line); text-align:left; }
     th { background:#edf1e9; color:var(--green); }
-    @media(max-width:700px) { .wrap{width:min(100% - 26px,560px)} header{padding-top:24px}.hero{grid-template-columns:1fr;gap:24px;padding:38px 0}.room-card{max-width:360px;margin:auto}.room-window{height:230px}.about-layout{grid-template-columns:1fr}.avatar{width:120px}section{padding:22px}nav{gap:2px}nav a{padding:8px 10px;font-size:.92rem}.project-grid{grid-template-columns:1fr} }
+    @media(max-width:700px) { .wrap{width:min(100% - 26px,560px)} header{padding-top:24px}.hero{grid-template-columns:1fr;gap:24px;padding:38px 0}.room-card{max-width:360px;margin:auto}.room-window{height:230px}.about-layout{grid-template-columns:1fr}.avatar{width:120px;height:145px}section{padding:22px}nav{gap:2px}nav a{padding:8px 10px;font-size:.92rem}.project-grid{grid-template-columns:1fr}.photo-gallery{grid-template-columns:1fr 1fr}.photo-gallery img{height:185px}.photo-gallery figure:last-child{grid-column:1 / -1}.photo-gallery figure:last-child img{height:240px} }
   </style>
 </head>
 <body>
@@ -81,7 +85,7 @@
       <section id="about">
         <h2>About Me</h2>
         <div class="about-layout">
-          <div class="avatar" role="img" aria-label="Decorative initials T S in a sage green circle">T&nbsp;S</div>
+          <img class="avatar" src="images/tiffany-profile.png" alt="Portrait of Tiffany Ann D. Sacriz seated in a lounge">
           <div>
             <p>I'm an adventurous girl who loves to develop, critique, and analyze things with my wholesome ideas. I enjoy interacting with people, making new connections, and meeting friends throughout my journey. As a future QA Analyst and AI Engineer, I hope to inspire others to use AI wisely without depending on it.</p>
           </div>
@@ -103,6 +107,7 @@
         <div class="project-grid">
           <article class="project-card"><p class="eyebrow">Proposed project · Quality assurance</p><h3>Roomify Guest Experience</h3><p>A proposed AI-assisted hotel website concept inspired by Roomify.io. It would help hotels create helpful guest experiences while keeping important information clear and easy to verify.</p></article>
           <article class="project-card"><p class="eyebrow">Proposed project · Mental wellness</p><h3>Mindful Steps</h3><p>A proposed student wellness app with gentle mood check-ins, grounding activities, and links to trusted support resources. It would encourage healthy habits without replacing professional care.</p></article>
+          <article class="project-card photography-project"><p class="eyebrow">Photography · Personal project</p><h3>Everyday Moments</h3><p>A small collection of moments I noticed and captured—from warm café light to cozy spaces and candid portraits. I enjoy using photography to tell a story through color, mood, and detail.</p><div class="photo-gallery"><figure><img src="images/photography-lounge.jpg" alt="Warmly lit lounge with leather seating and amber wall lights"><figcaption>Warm corners</figcaption></figure><figure><img src="images/photography-coffee.jpg" alt="Iced coffee on a wooden coaster beside a café napkin"><figcaption>Café details</figcaption></figure><figure><img src="images/photography-portrait.jpg" alt="Candid portrait in a dark green lounge"><figcaption>Candid portrait</figcaption></figure></div></article>
         </div>
       </section>
       <section id="goals">
