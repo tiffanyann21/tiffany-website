@@ -71,8 +71,23 @@
     <footer><div class="wrap footer-inner"><a class="footer-brand" href="#home"><span class="brand-mark">TADS</span><span>Tiffany Ann D. Sacriz</span></a><p>© 2026 Tiffany Ann D. Sacriz <span>·</span> Made with curiosity and care.</p><a href="#home" class="back-top">Back to top ↑</a></div></footer>
   </div>
   <script>
+    const page = document.documentElement;
+    const loader = document.querySelector('.loader');
     window.addEventListener('load', () => {
-      window.setTimeout(() => document.documentElement.classList.remove('has-loader'), 500);
+      window.setTimeout(() => page.classList.remove('has-loader'), 500);
+    });
+    document.querySelectorAll('a[href^="#"]').forEach((link) => {
+      link.addEventListener('click', (event) => {
+        const target = document.querySelector(link.getAttribute('href'));
+        if (!target) return;
+        event.preventDefault();
+        page.classList.add('has-loader');
+        window.setTimeout(() => {
+          history.replaceState(null, '', link.getAttribute('href'));
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          window.setTimeout(() => page.classList.remove('has-loader'), 420);
+        }, 180);
+      });
     });
   </script>
 </body>
