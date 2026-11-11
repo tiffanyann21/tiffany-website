@@ -3,93 +3,174 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="The portfolio of Tiffany Ann D. Sacriz, an Information Technology student interested in web development, quality assurance, and responsible AI.">
-  <title>Tiffany Ann D. Sacriz | Developer Portfolio</title>
-  <script>document.documentElement.classList.add('has-loader');</script>
+  <meta name="description" content="Tiffany Ann D. Sacriz — Information Technology student, aspiring developer, and creative problem-solver.">
+  <title>Tiffany Ann D. Sacriz | Student Portfolio</title>
   <style>
-
-    :root{--ink:#15283f;--muted:#5f7084;--blue:#4279a9;--blue-dark:#25496c;--sky:#e6f1f9;--paper:#fbfaf7;--line:#dbe3e9;--white:#fff;--shadow:0 18px 44px #1c34480d;--accent:#d9a94e;--serif:Georgia,'Times New Roman',serif;--sans:Arial,Helvetica,sans-serif}
-    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:92px}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 var(--sans);-webkit-font-smoothing:antialiased}img{display:block;max-width:100%}a{color:inherit}button,input,textarea{font:inherit}button,a{-webkit-tap-highlight-color:transparent}.wrap{width:min(1160px,calc(100% - 48px));margin-inline:auto}.room{min-height:100vh;background:linear-gradient(180deg,#fbfaf7 0,#f6f8fa 56%,#fbfaf7 100%)}
-    .loader{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;background:#f4f8fc;opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s ease}.has-loader .loader{opacity:1;visibility:visible}.loader-card{display:grid;justify-items:center;gap:14px;color:var(--blue-dark)}.loader-monogram{display:grid;place-items:center;width:104px;height:104px;border:2px solid #b8d2e9;border-radius:50%;background:#fff;box-shadow:0 10px 32px #355f8c18;font:700 1.35rem var(--serif);letter-spacing:.12em;animation:breathe 1.2s ease-in-out infinite alternate}.loader-label{font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase}@keyframes breathe{to{transform:scale(1.04)}}
-    .site-header{position:sticky;top:0;z-index:50;background:#ffffffed;border-bottom:1px solid #dce5eeaa;backdrop-filter:blur(16px)}.header-inner{display:block}.brand{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand-home,.footer-brand{display:inline-flex;align-items:center;gap:11px;text-decoration:none;font-weight:700;font-size:.91rem;letter-spacing:-.02em}.brand-mark{display:grid;place-items:center;width:39px;height:39px;border-radius:12px;background:var(--blue-dark);color:#fff;font:700 .72rem var(--sans);letter-spacing:.06em}.brand-email{font-size:.84rem;font-weight:700;text-decoration:none;color:var(--blue-dark)}.brand-email span{margin-left:4px}.main-nav{display:flex;align-items:center;gap:4px}.main-nav a{padding:9px 12px;border-radius:8px;color:#52667b;text-decoration:none;font-size:.83rem;font-weight:600;transition:background .2s,color .2s}.main-nav a:hover,.main-nav a:focus-visible{background:var(--sky);color:var(--blue-dark);outline:none}
-    .hero{display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:clamp(44px,8vw,112px);padding:78px 0 86px}.eyebrow{display:flex;align-items:center;gap:9px;margin:0 0 16px;color:var(--blue);font-size:.7rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase}.eyebrow-dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px #f8efdc}h1,h2,h3,p{margin-top:0}h1{max-width:650px;margin-bottom:18px;font:500 clamp(3.1rem,6.3vw,5.6rem)/1.02 var(--serif);letter-spacing:-.055em}h2{margin-bottom:18px;font:500 clamp(2rem,4vw,3.05rem)/1.12 var(--serif);letter-spacing:-.045em}.tagline{margin-bottom:14px;color:var(--blue);font:italic 1.2rem var(--serif)}.hero-copy{max-width:560px;margin-bottom:26px;color:var(--muted);font-size:1.05rem;line-height:1.85}.hero-actions{display:flex;flex-wrap:wrap;gap:11px}.button{display:inline-flex;align-items:center;justify-content:center;gap:16px;min-height:48px;padding:12px 19px;border:1px solid transparent;border-radius:8px;text-decoration:none;font-size:.85rem;font-weight:700;transition:transform .2s,background .2s,box-shadow .2s}.button:hover{transform:translateY(-2px)}.button.primary{background:var(--blue-dark);color:#fff;box-shadow:0 7px 18px #264e7522}.button.primary:hover{background:#1c3e60}.button.secondary{background:#fff;border-color:var(--line);color:var(--ink)}.button.secondary:hover{background:var(--sky);border-color:#bad0e3}.hero-note{display:flex;align-items:center;gap:9px;margin:25px 0 0;color:#708197;font-size:.77rem}.hero-note span{width:7px;height:7px;border-radius:50%;background:var(--accent)}.hero-portrait{position:relative;width:min(100%,420px);justify-self:end;padding:12px 34px 34px 12px}.hero-portrait:before{position:absolute;inset:26px 0 0 30px;border:1px solid #c5d6e4;border-radius:22px 110px 22px 22px;background:#e8f1f7;content:''}.hero-portrait>img{position:relative;width:100%;height:470px;object-fit:cover;object-position:center 32%;border:8px solid #fff;border-radius:14px 110px 14px 14px;box-shadow:var(--shadow)}.portrait-note{position:absolute;right:0;bottom:0;display:flex;align-items:center;gap:12px;padding:14px 17px;border:1px solid var(--line);border-radius:10px;background:#fff;box-shadow:var(--shadow);font-size:.78rem;line-height:1.45;color:var(--muted)}.portrait-note strong{color:var(--ink)}.note-mark{display:grid;place-items:center;width:35px;height:35px;border-radius:50%;background:#fff4d8;color:#89651f;font:700 1rem var(--serif)}
-    .main-nav-wrap{border-top:1px solid var(--line)}main{padding:0 0 70px}.section{margin:0;padding:86px 0;border-bottom:1px solid var(--line);scroll-margin-top:76px}.section-white{background:#fff}.section-inner{width:min(1160px,calc(100% - 48px));margin:0 auto}.heading-muted{color:#8293a7}.about-grid{display:grid;grid-template-columns:.55fr 1fr;gap:80px;align-items:start}.about-grid p{max-width:690px;margin-bottom:0;color:var(--muted);font-size:1.05rem;line-height:1.9}.section-heading{max-width:650px;margin-bottom:34px}.section-intro{max-width:640px;margin:-5px 0 30px;color:var(--muted)}
-    .skills-list{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:28px 0 0;padding:0;list-style:none}.skills-list li{position:relative;padding:18px 18px 18px 48px;border:1px solid var(--line);border-radius:10px;background:#fff;font-weight:600;font-size:.92rem}.skills-list li:before{position:absolute;left:18px;top:50%;display:grid;place-items:center;width:18px;height:18px;transform:translateY(-50%);border-radius:50%;background:#fff4d8;color:#89651f;content:'✓';font-size:.72rem;font-weight:700}
-    .education-card{overflow:hidden;border:1px solid var(--line);border-radius:12px;background:#fff;box-shadow:var(--shadow)}.table-scroll{overflow-x:auto}table{width:100%;min-width:560px;border-collapse:collapse;text-align:left}th,td{padding:18px 22px;border-bottom:1px solid var(--line)}th{background:#f0f6fb;color:#526d88;font-size:.71rem;letter-spacing:.1em;text-transform:uppercase}td{font-size:.92rem}tbody tr:last-child td{border-bottom:0}
-    .project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.project-card{padding:26px;border:1px solid var(--line);border-radius:12px;background:#fff;box-shadow:0 8px 28px #213d5808}.project-card.featured{grid-column:span 2;display:grid;grid-template-columns:1fr auto;align-items:start;gap:12px 24px;background:linear-gradient(120deg,#fff,#f1f7fc);border-left:4px solid var(--accent)}.project-card h3{margin:0 0 10px;font:500 1.65rem var(--serif);letter-spacing:-.03em}.project-card p:not(.eyebrow){max-width:680px;margin-bottom:0;color:var(--muted);font-size:.92rem;line-height:1.8}.project-card .eyebrow{margin-bottom:10px}.project-link{display:inline-flex;align-items:center;gap:8px;margin-top:15px;color:var(--blue-dark);font-size:.83rem;font-weight:700;text-decoration:none}.project-link:hover{text-decoration:underline;text-underline-offset:4px}.featured .project-link{grid-column:2;grid-row:1 / span 3;align-self:center}.photo-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:20px}.photo-gallery figure{min-width:0;margin:0}.photo-gallery img{width:100%;height:220px;object-fit:cover;border-radius:8px}.photo-gallery figcaption{padding:8px 2px;color:var(--muted);font-size:.77rem}
-    .goals-grid{display:grid;grid-template-columns:.65fr 1fr;gap:60px;align-items:start}.goals-list{display:grid;gap:0;margin:0;padding:0;list-style:none;counter-reset:goal}.goals-list li{position:relative;padding:17px 0 17px 54px;border-bottom:1px solid var(--line);color:#52667b;counter-increment:goal}.goals-list li:before{position:absolute;left:0;top:17px;color:var(--blue);content:'0' counter(goal);font:500 1.1rem var(--serif)}
-    .contact-panel{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;padding:38px;border:1px solid var(--line);border-radius:14px;background:#fff;box-shadow:var(--shadow)}.contact-copy p{color:var(--muted)}.contact-copy>a{color:var(--blue-dark);font-weight:700;text-decoration:none;overflow-wrap:anywhere}.contact-copy>a:hover{text-decoration:underline}.contact-form{display:grid;gap:9px}.contact-form label{margin-top:5px;font-size:.8rem;font-weight:700}.contact-form input,.contact-form textarea{width:100%;padding:12px 13px;border:1px solid #d1deea;border-radius:7px;background:#fbfdff;color:var(--ink);font:inherit;font-size:.9rem}.contact-form input:focus,.contact-form textarea:focus{outline:3px solid #e6f0f8;border-color:#7ea8cc}.contact-form button{justify-self:start;display:inline-flex;gap:12px;align-items:center;margin-top:7px;padding:12px 17px;border:0;border-radius:7px;background:var(--blue-dark);color:#fff;font-size:.83rem;font-weight:700;cursor:pointer}.form-note{margin:0;color:#7b8b9d;font-size:.73rem}
-    footer{background:#18324b;color:#d7e3ee}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:27px 0}.footer-brand{color:#fff}.footer-brand .brand-mark{width:34px;height:34px;border:1px solid #7590a9;background:transparent}.footer-inner p{margin:0;color:#b8c8d8;font-size:.76rem}.back-top{color:#fff;font-size:.78rem;font-weight:700;text-decoration:none}.back-top:hover{text-decoration:underline}
-    @media(max-width:850px){.header-inner{padding:0}.brand{min-height:68px}.main-nav{width:100%;overflow-x:auto;padding-bottom:3px}.main-nav a{white-space:nowrap;padding:8px 10px}.hero{gap:35px;padding:60px 0}.hero-portrait>img{height:390px}.about-grid,.goals-grid{grid-template-columns:1fr;gap:18px}.section{padding:66px 0}.contact-panel{gap:34px;padding:28px}}
-    @media(max-width:600px){.wrap,.section-inner{width:calc(100% - 32px)}.brand{width:100%;min-height:64px}.brand-home{font-size:.82rem}.brand-email{font-size:.77rem}.hero{grid-template-columns:1fr;padding:48px 0 55px}.hero-copy{font-size:.96rem}.hero-portrait{width:min(100%,380px);justify-self:center;margin-top:6px}.hero-portrait>img{height:390px}.section{padding:54px 0}.section-heading{margin-bottom:24px}.skills-list{grid-template-columns:1fr 1fr;gap:9px}.skills-list li{padding:14px 10px 14px 37px;font-size:.8rem}.skills-list li:before{left:12px}.project-grid{grid-template-columns:1fr}.project-card.featured{grid-column:auto;display:block}.featured .project-link{display:inline-flex;margin-top:16px}.photo-gallery{grid-template-columns:1fr 1fr}.photo-gallery img{height:160px}.photo-gallery figure:last-child{grid-column:1 / -1}.photo-gallery figure:last-child img{height:220px}.contact-panel{grid-template-columns:1fr;gap:25px;padding:22px}.footer-inner{flex-wrap:wrap;padding:22px 0}.footer-inner p{order:3;width:100%}table{min-width:520px}}
-    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+    :root {
+      --navy: #193653;
+      --blue: #3e78aa;
+      --sky: #e7f2fa;
+      --paper: #f7f9fc;
+      --white: #fff;
+      --ink: #23364b;
+      --muted: #64768a;
+      --line: #dce5ed;
+      --gold: #d5a64c;
+      --radius: 16px;
+      --shadow: 0 10px 30px rgba(25, 54, 83, .07);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.7 Arial, Helvetica, sans-serif; }
+    a { color: var(--blue); }
+    img { display: block; max-width: 100%; }
+    .container { width: min(1080px, calc(100% - 36px)); margin-inline: auto; }
+    .site-header { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.96); border-bottom: 1px solid var(--line); backdrop-filter: blur(10px); }
+    .header-row { min-height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--navy); font-weight: 700; text-decoration: none; }
+    .brand-mark { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 12px; background: var(--navy); color: white; font-size: .72rem; letter-spacing: .05em; }
+    nav { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 4px; }
+    nav a { padding: 8px 10px; border-radius: 8px; color: #53677c; font-size: .85rem; font-weight: 700; text-decoration: none; transition: background .2s ease, color .2s ease; }
+    nav a:hover, nav a:focus-visible { background: var(--sky); color: var(--navy); outline: none; }
+    .hero { display: grid; grid-template-columns: 1.1fr .9fr; align-items: center; gap: 56px; padding-block: 66px 76px; }
+    .kicker { margin: 0 0 10px; color: var(--blue); font-size: .76rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+    h1, h2, h3 { color: var(--navy); font-family: Georgia, 'Times New Roman', serif; line-height: 1.15; }
+    h1 { max-width: 620px; margin: 0 0 12px; font-size: clamp(2.7rem, 6vw, 4.8rem); letter-spacing: -.04em; }
+    h2 { margin: 0 0 12px; font-size: clamp(1.8rem, 4vw, 2.5rem); }
+    h3 { margin: 0 0 8px; font-size: 1.35rem; }
+    p { margin-top: 0; }
+    .tagline { margin: 0 0 16px; color: var(--blue); font: italic 1.25rem Georgia, serif; }
+    .hero-copy { max-width: 570px; margin-bottom: 22px; color: var(--muted); font-size: 1.05rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+    .button { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 44px; padding: 10px 16px; border: 1px solid var(--navy); border-radius: 8px; background: var(--navy); color: white; font-size: .88rem; font-weight: 700; text-decoration: none; transition: transform .18s ease, background .18s ease; }
+    .button:hover { transform: translateY(-2px); background: #102a43; }
+    .button.secondary { background: white; color: var(--navy); border-color: var(--line); }
+    .hero-photo { position: relative; width: min(100%, 365px); justify-self: center; padding: 10px 22px 22px 10px; }
+    .hero-photo::before { position: absolute; inset: 25px 0 0 28px; border-radius: 18px 95px 18px 18px; background: var(--sky); content: ''; }
+    .hero-photo img { position: relative; width: 100%; height: 390px; object-fit: cover; object-position: center 32%; border: 7px solid white; border-radius: 14px 90px 14px 14px; box-shadow: var(--shadow); }
+    .photo-label { position: absolute; right: 0; bottom: 0; padding: 10px 14px; border: 1px solid var(--line); border-radius: 10px; background: white; box-shadow: var(--shadow); color: var(--navy); font-size: .78rem; font-weight: 700; }
+    .section { padding-block: 62px; border-top: 1px solid var(--line); scroll-margin-top: 82px; }
+    .section.white { background: white; }
+    .section-inner { width: min(1080px, calc(100% - 36px)); margin-inline: auto; }
+    .section-intro { max-width: 660px; margin: 0 0 22px; color: var(--muted); }
+    .about-grid { display: grid; grid-template-columns: .7fr 1fr; gap: 40px; align-items: start; }
+    .about-grid p:last-child { margin: 0; color: var(--muted); }
+    .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 22px 0 0; padding: 0; list-style: none; }
+    .skills-grid li { padding: 13px 15px; border: 1px solid var(--line); border-radius: 10px; background: white; font-weight: 700; }
+    .skills-grid li::before { margin-right: 9px; color: var(--gold); content: '✦'; }
+    .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: white; box-shadow: var(--shadow); }
+    table { width: 100%; min-width: 500px; border-collapse: collapse; text-align: left; }
+    th, td { padding: 14px 17px; border-bottom: 1px solid var(--line); }
+    th { background: var(--sky); color: var(--navy); font-size: .78rem; text-transform: uppercase; letter-spacing: .07em; }
+    tbody tr:last-child td { border-bottom: 0; }
+    .projects { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .project { padding: 21px; border: 1px solid var(--line); border-radius: var(--radius); background: white; box-shadow: var(--shadow); transition: transform .2s ease, box-shadow .2s ease; }
+    .project:hover { transform: translateY(-3px); box-shadow: 0 14px 32px rgba(25,54,83,.11); }
+    .project.featured { grid-column: 1 / -1; display: flex; justify-content: space-between; align-items: center; gap: 24px; border-left: 4px solid var(--gold); background: linear-gradient(110deg, white, #f0f7fc); }
+    .project p { margin: 0; color: var(--muted); }
+    .project-tag { margin-bottom: 8px !important; color: var(--blue) !important; font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+    .project-link { flex: 0 0 auto; font-weight: 700; text-decoration: none; }
+    .project-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+    .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 16px; }
+    .gallery figure { margin: 0; }
+    .gallery img { width: 100%; height: 195px; border-radius: 9px; object-fit: cover; }
+    .gallery figcaption { padding: 6px 1px; color: var(--muted); font-size: .78rem; }
+    .goals { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; counter-reset: goal; }
+    .goals li { position: relative; padding: 15px 10px 15px 48px; border-bottom: 1px solid var(--line); color: var(--muted); counter-increment: goal; }
+    .goals li::before { position: absolute; left: 4px; color: var(--blue); content: '0' counter(goal); font: 700 1rem Georgia, serif; }
+    .contact-box { display: grid; grid-template-columns: .8fr 1.2fr; gap: 36px; padding: 25px; border: 1px solid var(--line); border-radius: var(--radius); background: white; box-shadow: var(--shadow); }
+    .email { display: inline-block; overflow-wrap: anywhere; font-weight: 700; text-decoration: none; }
+    .email:hover { text-decoration: underline; }
+    form { display: grid; gap: 8px; }
+    label { margin-top: 4px; font-size: .85rem; font-weight: 700; }
+    input, textarea { width: 100%; padding: 11px 12px; border: 1px solid #ccd9e5; border-radius: 8px; background: #fbfdff; color: var(--ink); font: inherit; }
+    input:focus, textarea:focus { outline: 3px solid var(--sky); border-color: var(--blue); }
+    form button { justify-self: start; margin-top: 5px; cursor: pointer; }
+    .form-note { margin: 0; color: var(--muted); font-size: .76rem; }
+    footer { padding: 22px 0; background: var(--navy); color: #dce8f1; }
+    .footer-row { display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+    .footer-row p { margin: 0; font-size: .82rem; }
+    .footer-row a { color: white; font-size: .82rem; font-weight: 700; text-decoration: none; }
+    .footer-row a:hover { text-decoration: underline; }
+    @media (max-width: 760px) {
+      .header-row { align-items: flex-start; flex-direction: column; gap: 7px; padding-block: 12px; }
+      nav { justify-content: flex-start; width: 100%; overflow-x: auto; padding-bottom: 2px; }
+      nav a { flex: 0 0 auto; }
+      .hero { grid-template-columns: 1fr; gap: 30px; padding-block: 44px 54px; }
+      .hero-photo { width: min(100%, 340px); }
+      .hero-photo img { height: 350px; }
+      .about-grid, .contact-box { grid-template-columns: 1fr; gap: 18px; }
+      .section { padding-block: 46px; }
+      .skills-grid { grid-template-columns: repeat(2, 1fr); }
+      .projects { grid-template-columns: 1fr; }
+      .project.featured { grid-column: auto; align-items: flex-start; flex-direction: column; gap: 12px; }
+      .gallery img { height: 160px; }
+      .footer-row { align-items: flex-start; flex-direction: column; }
+    }
+    @media (max-width: 420px) {
+      .container, .section-inner { width: calc(100% - 28px); }
+      .skills-grid { gap: 8px; }
+      .skills-grid li { padding: 11px 9px; font-size: .85rem; }
+      .gallery { grid-template-columns: 1fr 1fr; }
+      .gallery figure:last-child { grid-column: 1 / -1; }
+      .gallery figure:last-child img { height: 210px; }
+    }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; } }
   </style>
 </head>
 <body>
-  <div class="loader" aria-hidden="true"><div class="loader-card"><div class="loader-monogram">TADS</div><span class="loader-label">Tiffany Ann D. Sacriz</span></div></div>
-  <div class="room">
-    <header class="site-header" id="home"><div class="wrap header-inner">
-      <div class="brand"><a class="brand-home" href="#home"><span class="brand-mark" aria-hidden="true">TADS</span><span>Tiffany Ann D. Sacriz</span></a><a class="brand-email" href="mailto:sacriztad@students.nu-fairview.edu.ph">Let’s connect <span aria-hidden="true">↗</span></a></div>
-      <div class="hero">
-        <div>
-          <p class="eyebrow"><span class="eyebrow-dot"></span>Information Technology · Fairview, Philippines</p>
-          <h1>Tiffany Ann D. Sacriz</h1>
-          <p class="tagline">“You’re gonna go far.”</p>
-          <p class="hero-copy">I’m an IT student building my skills in web development and software quality. I’m curious about how thoughtful design and responsible AI can make digital experiences more useful.</p><div class="hero-actions"><a class="button primary" href="#projects">Explore my work <span aria-hidden="true">↓</span></a><a class="button secondary" href="mailto:sacriztad@students.nu-fairview.edu.ph">Get in touch <span aria-hidden="true">↗</span></a></div><p class="hero-note"><span></span> Open to learning, collaboration, and new ideas</p>
-        </div>
-        <div class="hero-portrait"><img src="images/tiffany-profile.png" alt="Tiffany Ann D. Sacriz seated in a dark green lounge"><div class="portrait-note"><span class="note-mark">TADS</span><span><strong>Curious by nature.</strong><br>Thoughtful by design.</span></div></div>
-      </div>
-      <nav class="main-nav" aria-label="Main navigation">
+  <header class="site-header" id="home">
+    <div class="container header-row">
+      <a class="brand" href="#home"><span class="brand-mark">TADS</span><span>Tiffany Ann D. Sacriz</span></a>
+      <nav aria-label="Main navigation">
         <a href="#about">About</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#projects">Projects</a><a href="#goals">Goals</a><a href="#contact">Contact</a>
       </nav>
+    </div>
+  </header>
+  <main>
+    <section class="container hero" aria-labelledby="page-title">
+      <div>
+        <p class="kicker">BS Information Technology · 2nd Year</p>
+        <h1 id="page-title">Tiffany Ann D. Sacriz</h1>
+        <p class="tagline">“You’re gonna go far.”</p>
+        <p class="hero-copy">IT student, aspiring developer, and curious problem-solver. I’m interested in building useful digital experiences and learning how technology can support people.</p>
+        <div class="hero-actions"><a class="button" href="#projects">See my projects <span aria-hidden="true">↓</span></a><a class="button secondary" href="#contact">Contact me <span aria-hidden="true">↗</span></a></div>
       </div>
-    </header>
-    <main>
-      <section id="about" class="section section-white"><div class="section-inner about-grid">
-        <div><p class="eyebrow">A little about me</p><h2>Learning with purpose.<br><span class="heading-muted">Building with care.</span></h2></div>
-        <p>I am an Information Technology student with a curiosity for how digital products are designed, tested, and improved. I enjoy developing ideas, analyzing details, and working with people who bring different perspectives. My long-term interests are quality assurance and AI engineering, with a focus on using AI thoughtfully as a tool that supports human judgment.</p>
-      </div></section>
-      <section id="skills" class="section"><div class="section-inner">
-        <p class="eyebrow">What I bring</p><h2>Skills</h2><p class="section-intro">A mix of technical foundations and people-centered strengths I’m continuing to develop.</p>
-        <ul class="skills-list"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Git & GitHub</li><li>Python</li><li>Writing</li><li>Public Speaking</li><li>Leadership</li><li>Goal Setting</li></ul>
-      </div></section>
-      <section id="education" class="section section-white"><div class="section-inner">
-        <p class="eyebrow">My foundation</p><h2>Education</h2>
-        <div class="education-card"><div class="table-scroll"><table><thead><tr><th scope="col">School</th><th scope="col">Program</th><th scope="col">Year Level</th></tr></thead><tbody><tr><td>National University – Fairview</td><td>BS Information Technology</td><td>2nd Year</td></tr></tbody></table></div></div>
-      </div></section>
-      <section id="projects" class="section"><div class="section-inner">
-        <p class="eyebrow">Selected work & ideas</p><h2>Projects</h2><p class="section-intro">A growing collection of work, concepts, and moments I’ve enjoyed creating.</p>
-        <div class="project-grid">
-          <article class="project-card featured"><div><p class="eyebrow">Selected project</p><h3>Roomify.io</h3><p>Roomify.io explores how hotel websites can offer a more useful digital guest experience. The project brings together AI-assisted discovery, room exploration, and interactive features in one web experience.</p></div><a class="project-link" href="https://roomify-ekacystvi-roomify5.vercel.app/" target="_blank" rel="noopener noreferrer">Visit Roomify.io <span aria-hidden="true">↗</span></a></article>
-          <article class="project-card"><p class="eyebrow">Concept project</p><h3>Mindful Steps</h3><p>A mental wellness app concept for students, with simple mood check-ins, grounding activities, and links to trusted support resources. The idea is to make everyday self-care easier to approach while encouraging people to seek support when they need it.</p></article>
-          <article class="project-card photography-project"><p class="eyebrow">Personal work</p><h3>Everyday Moments</h3><p>A collection of moments captured in cafés and intimate spaces. These photographs explore warm light, color, atmosphere, and candid portraiture.</p><div class="photo-gallery"><figure><img src="images/photography-lounge.jpg" alt="Warmly lit lounge with leather seating and amber wall lights"><figcaption>Warm corners</figcaption></figure><figure><img src="images/photography-coffee.jpg" alt="Iced coffee on a wooden coaster beside a café napkin"><figcaption>Café details</figcaption></figure><figure><img src="images/photography-portrait.jpg" alt="Candid portrait in a dark green lounge"><figcaption>Candid portrait</figcaption></figure></div></article>
-        </div>
-      </div></section>
-      <section id="goals" class="section section-white"><div class="section-inner goals-grid"><div><p class="eyebrow">Looking ahead</p><h2>Career Goals</h2></div><ol class="goals-list"><li>Continue strengthening my programming skills and use AI tools responsibly to support my learning.</li><li>Develop an application that helps raise awareness of mental health and makes supportive resources easier to find.</li><li>Grow into a leader who encourages and supports future IT professionals.</li></ol></div></section>
-      <section id="contact" class="section"><div class="section-inner"><p class="eyebrow">Say hello</p><div class="contact-panel"><div class="contact-copy"><h2>Let’s connect.</h2><p>For project inquiries or professional connections, email me at</p><a href="mailto:sacriztad@students.nu-fairview.edu.ph">sacriztad@students.nu-fairview.edu.ph</a></div><form class="contact-form" action="#contact" method="get"><label for="name">Your name</label><input id="name" name="name" type="text" autocomplete="name" placeholder="Enter your name"><label for="email">Your email</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com"><label for="message">Message</label><textarea id="message" name="message" rows="4" placeholder="Write your message"></textarea><button type="submit">Send a message <span aria-hidden="true">↗</span></button><p class="form-note">This is a visual form prototype and does not send messages.</p></form></div></div></section>
-    </main>
-    <footer><div class="wrap footer-inner"><a class="footer-brand" href="#home"><span class="brand-mark">TADS</span><span>Tiffany Ann D. Sacriz</span></a><p>© 2026 Tiffany Ann D. Sacriz <span>·</span> Made with curiosity and care.</p><a href="#home" class="back-top">Back to top ↑</a></div></footer>
-  </div>
-  <script>
-    const page = document.documentElement;
-    const loader = document.querySelector('.loader');
-    window.addEventListener('load', () => {
-      window.setTimeout(() => page.classList.remove('has-loader'), 500);
-    });
-    document.querySelectorAll('a[href^="#"]').forEach((link) => {
-      link.addEventListener('click', (event) => {
-        const href = link.getAttribute('href');
-        const target = document.getElementById(href.slice(1));
-        if (!target) return;
-        event.preventDefault();
-        page.classList.add('has-loader');
-        window.setTimeout(() => {
-          window.location.hash = target.id;
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          window.setTimeout(() => page.classList.remove('has-loader'), 250);
-        }, 120);
-      });
-    });
-  </script>
+      <div class="hero-photo"><img src="images/tiffany-profile.png" alt="Portrait of Tiffany Ann D. Sacriz seated in a lounge"><span class="photo-label">Curious by nature · TADS</span></div>
+    </section>
+    <section class="section white" id="about"><div class="section-inner about-grid">
+      <div><p class="kicker">A little about me</p><h2>Learning, creating,<br>and connecting.</h2></div>
+      <p>I’m an adventurous Information Technology student who enjoys developing ideas, critiquing details, and analyzing how things work. I love meeting people, making new connections, and learning from each step of the journey. In the future, I hope to work in quality assurance and AI engineering, and encourage people to use AI thoughtfully rather than depend on it.</p>
+    </div></section>
+    <section class="section" id="skills"><div class="section-inner">
+      <p class="kicker">Tools and strengths</p><h2>Technical Skills</h2><p class="section-intro">Foundational technologies I’m learning and practicing, alongside the skills I use to work with others.</p>
+      <ul class="skills-grid"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Git &amp; GitHub</li><li>Python</li><li>Writing</li><li>Web Development</li><li>Public Speaking</li><li>Leadership</li></ul>
+    </div></section>
+    <section class="section white" id="education"><div class="section-inner">
+      <p class="kicker">My studies</p><h2>Education</h2>
+      <div class="table-wrap"><table><thead><tr><th scope="col">School</th><th scope="col">Program</th><th scope="col">Year Level</th></tr></thead><tbody><tr><td>National University – Fairview</td><td>BS Information Technology</td><td>2nd Year</td></tr></tbody></table></div>
+    </div></section>
+    <section class="section" id="projects"><div class="section-inner">
+      <p class="kicker">Things I’ve made and imagined</p><h2>Projects</h2><p class="section-intro">A few projects that reflect my interests in technology, wellbeing, and visual storytelling.</p>
+      <div class="projects">
+        <article class="project featured"><div><p class="project-tag">Personal project</p><h3>Roomify.io</h3><p>A hotel website experience designed to help properties create more useful digital journeys, with AI-assisted discovery, interactive room exploration, and guest-focused features.</p></div><a class="project-link" href="https://roomify-ekacystvi-roomify5.vercel.app/" target="_blank" rel="noopener noreferrer">Visit Roomify.io ↗</a></article>
+        <article class="project"><p class="project-tag">App concept</p><h3>Mindful Steps</h3><p>A student mental wellness app concept with simple mood check-ins, grounding activities, and links to trusted support resources.</p></article>
+        <article class="project"><p class="project-tag">Photography</p><h3>Everyday Moments</h3><p>A collection of café details, cozy spaces, and candid portraits. I like capturing warm light, atmosphere, and the small details that make a moment memorable.</p>
+          <div class="gallery"><figure><img src="images/photography-lounge.jpg" alt="Warmly lit lounge with leather seating and amber wall lights"><figcaption>Warm corners</figcaption></figure><figure><img src="images/photography-coffee.jpg" alt="Iced coffee on a wooden coaster beside a café napkin"><figcaption>Café details</figcaption></figure><figure><img src="images/photography-portrait.jpg" alt="Candid portrait in a dark green lounge"><figcaption>Candid portrait</figcaption></figure></div>
+        </article>
+      </div>
+    </div></section>
+    <section class="section white" id="goals"><div class="section-inner">
+      <p class="kicker">Looking ahead</p><h2>Career Goals</h2>
+      <ol class="goals"><li>Keep improving my programming skills and use AI tools responsibly to support my learning.</li><li>Develop an application that advocates for mental health and helps people find supportive resources.</li><li>Encourage and lead future IT professionals through collaboration and lifelong learning.</li></ol>
+    </div></section>
+    <section class="section" id="contact"><div class="section-inner">
+      <p class="kicker">Let’s connect</p><h2>Contact</h2>
+      <div class="contact-box"><div><p>For questions, project ideas, or a friendly hello, email me at:</p><a class="email" href="mailto:sacriztad@students.nu-fairview.edu.ph">sacriztad@students.nu-fairview.edu.ph</a></div>
+        <form action="#contact" method="get"><label for="name">Your name</label><input id="name" name="name" type="text" placeholder="Enter your name" autocomplete="name"><label for="email">Your email</label><input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email"><label for="message">Message</label><textarea id="message" name="message" rows="4" placeholder="Write your message"></textarea><button class="button" type="submit">Send a message ↗</button><p class="form-note">This is a visual form prototype; messages are not submitted.</p></form>
+      </div>
+    </div></section>
+  </main>
+  <footer><div class="container footer-row"><p>© 2026 Tiffany Ann D. Sacriz</p><p>Thanks for visiting my portfolio.</p><a href="#home">Back to top ↑</a></div></footer>
 </body>
 </html>
