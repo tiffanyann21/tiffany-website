@@ -5,11 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Tiffany Ann D. Sacriz's personal developer portfolio.">
   <title>Tiffany Ann D. Sacriz | Developer Portfolio</title>
+  <script>document.documentElement.classList.add('has-loader');</script>
   <style>
     :root { --ink:#24364b; --muted:#65758b; --cream:#f4f8fc; --sage:#dcecf8; --green:#355f8c; --coral:#5d88b5; --white:#ffffff; --line:#d8e3ee; }
     * { box-sizing:border-box; }
     html { scroll-behavior:smooth; }
     body { margin:0; background:var(--cream); color:var(--ink); font-family:Arial, Helvetica, sans-serif; line-height:1.65; }
+    .loader { position:fixed; inset:0; z-index:1000; display:grid; place-items:center; background:#f4f8fc; opacity:0; visibility:hidden; transition:opacity .45s ease,visibility .45s ease; }
+    .has-loader .loader { opacity:1; visibility:visible; }
+    .loader-card { display:grid; justify-items:center; gap:14px; color:#355f8c; }
+    .loader-monogram { display:grid; place-items:center; width:104px; height:104px; border:2px solid #b8d2e9; border-radius:50%; background:#fff; box-shadow:0 10px 32px #355f8c18; font:700 1.4rem Georgia,serif; letter-spacing:.12em; animation:monogram-breathe 1.2s ease-in-out infinite alternate; }
+    .loader-label { font-size:.72rem; font-weight:700; letter-spacing:.2em; text-transform:uppercase; }
+    @keyframes monogram-breathe { from { transform:scale(.96); box-shadow:0 8px 22px #355f8c12; } to { transform:scale(1); box-shadow:0 12px 32px #355f8c24; } }
+    @media (prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto !important; animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; } }
     a { color:var(--green); }
     .room { min-height:100vh; overflow:hidden; background:radial-gradient(ellipse at 83% 10%,#e1effb 0 10%,transparent 10.2%),linear-gradient(180deg,#f8fbff,var(--cream)); }
     .wrap { width:min(1080px,calc(100% - 40px)); margin:auto; }
@@ -63,6 +71,7 @@
   </style>
 </head>
 <body>
+  <div class="loader" aria-hidden="true"><div class="loader-card"><div class="loader-monogram">TADS</div><span class="loader-label">Tiffany Ann D. Sacriz</span></div></div>
   <div class="room">
     <header class="wrap" id="home">
       <div class="brand"><span class="brand-mark" aria-hidden="true">T</span><span>Tiffany's Portfolio</span></div>
@@ -128,5 +137,10 @@
     </main>
     <footer class="wrap"><p>© 2026 Tiffany Ann D. Sacriz · Thank you for visiting my little corner of the web.</p></footer>
   </div>
+  <script>
+    window.addEventListener('load', () => {
+      window.setTimeout(() => document.documentElement.classList.remove('has-loader'), 500);
+    });
+  </script>
 </body>
 </html>
